@@ -1,11 +1,24 @@
-<div>
-    <form [formGroup]="formulario" (ngSubmit)="enviar()" class="space-y-4">
+<!--Formularios-->
+<section class="h-screen py-20 px-12 bg-green-600 text-black">
+  <div class="px-12 mb-12 font-bold">
+    <h4>Contacto</h4>
+  </div>
 
-        <input formControlName="nome" placeholder="Nome" class="input"/>
+  <form [formGroup]="formulario" (ngSubmit)="enviar()" class="space-y-4">
+    <input formControlName="nome" placeholder="Nome" class="input block p-2" />
 
-        <input formControlName="email" placeholder="Email" class="input"/>
+    <input
+      formControlName="email"
+      placeholder="Email"
+      class="input block p-2"
+    />
 
-        <button type="submit" class="btn btn-primary">Enviar</button>>
-    </form>
-</div>
+    <input
+      formControlName="telefone"
+      placeholder="Telefone"
+      class="input block p-2"
+    />
 
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</section>

@@ -18,6 +18,7 @@ export class ReactiveFormsComponent implements OnInit, OnDestroy {
   formulario = this.fb.group({
     nome: [''],
     email: [''],
+    telefone: [''],
   });
 
   constructor() {
