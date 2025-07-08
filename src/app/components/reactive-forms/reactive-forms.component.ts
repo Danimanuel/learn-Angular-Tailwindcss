@@ -31,7 +31,7 @@ export class ReactiveFormsComponent implements OnInit, OnDestroy {
 
 
   enviar() {
-    this.http.post('https://jsonplaceholder.typicode.com/posts', this.formulario.value)
+    this.http.post('http://127.0.0.1:8000/api/v1/contato/', this.formulario.value)
       .subscribe(res => console.log('enviado!', res));
   }
 
