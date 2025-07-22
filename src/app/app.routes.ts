@@ -6,6 +6,7 @@ import { Routes } from '@angular/router';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { SectionComponent } from './components/section/section.component';
 
+
 export const routes: Routes = [
 
   {

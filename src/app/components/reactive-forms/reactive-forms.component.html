@@ -1,9 +1,8 @@
 <!--Formularios-->
-<section class="h-screen py-20 px-12 bg-green-600 text-black">
-  <div class="px-12 mb-12 font-bold">
-    <h4>Contacto</h4>
+<section class="h-screen py-20 px-12 bg-green-600 text-black mx-auto">
+  <div class="px-12 mb-12 font-bold ">
+    <h4 class="text-2xl font-semibold">Contacto</h4>
   </div>
-
   <form [formGroup]="formulario" (ngSubmit)="enviar()" class="space-y-4">
     <input formControlName="nome" placeholder="Nome" class="input block p-2" />
 
@@ -19,17 +18,19 @@
       class="input block p-2"
     />
     <input
-    formControlName="data_nascimento"
-    placeholder="Data de nascimento"
-    class="input block p-2"
-    >
+      formControlName="data_nascimento"
+      placeholder="Data de nascimento"
+      class="input block p-2"
+    />
 
     <input
-    formControlName="numero_bi"
-    placeholder="Numero do bilhete de identidade"
-    class="input block p-2"
-    >
+      formControlName="numero_bi"
+      placeholder="Numero do bilhete de identidade"
+      class="input block p-2"
+    />
 
-    <button type="submit" class="btn btn-primary bg-white p-2 m-2 font-bold">Enviar</button>
+    <button type="submit" class="btn btn-primary bg-white p-2 m-2 font-bold">
+      Enviar
+    </button>
   </form>
 </section>
